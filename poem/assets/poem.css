@@ -5,14 +5,14 @@
 }
 
 body{
-    background-color: brown;
+    background-color: wheat;
     text-align: center;
-    font-size: 200px;
+    font-size: 100px;
     
 }
 
 #bottom{
-    padding-top: 20%;
+    padding-top: 10%;
     font-family: 'Bungee Spice', cursive;
 }
 #shoes{
@@ -27,14 +27,14 @@ body{
     font-family: 'Splash', cursive;
 }
 #title{
-    font-family: sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-size: 25px;
     position: fixed;
     background-color: antiquewhite;
     padding-left: 0%;
     padding-top: 0%;
-    padding-right: 100%;
-    padding-bottom: -70%;
+    padding-right: 10%;
+
     border-top: 0px;
     text-align: right;
 }
