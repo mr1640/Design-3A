@@ -21,7 +21,7 @@ body{
         animation-iteration-count: infinite;
     }
     
-    @-webkit-keyframes fadeinout {
+  /*  @-webkit-keyframes fadeinout {
       50% { opacity: 1; }
     }
     
