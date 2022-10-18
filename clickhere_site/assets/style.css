@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 300ms ease-in-out;
+}
+canvas {
+    display: block;
+  }
+  /* want to make it a solid page, no scrolling */
+body{
+    overflow: hidden;
+}
+
+img{
+    width: 10vw;
+    position: absolute;
+}
+
+/* make paneling */
+.box{
+    
+    justify-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    z-index: 1;
+}
+
+#eyes{
+    width: 70vw;
+    height:60vh;
+   
+    top: 0;
+    right: 0;
+    position: relative;
+    border-style: solid;
+    border-width: 7px;
+    border-color: black;
+    
+}
+
+
+/* adjusting for embedded p5 */
+canvas#defaultCanvas0 {
+    margin-top: -100vh;
+    margin-left: -20vw;
+    width: 70vw;
+    height: 70vh;
+}
+
+/* #p5eyes{
+    width: 70vw;
+    height:60vh;
+} */
+
+
+
+#snake{
+    position: relative;
+    width: 30vw;
+    height: 40vh;
+    background-color: #DCDCDC;
+    top:0;
+    left:100;
+  
+}
+
+.play{
+    position: absolute;
+    z-index: 3;
+    margin-top: 10vh;
+    padding-left: 10vw;
+    font-family: 'Silkscreen', cursive;
+}
+
+#start{
+    color: red;
+}
+
+#end{
+    color:#DCDCDC;
+    top: 20vh;
+    font-size: 2vw;
+}
+/* for p5 widget */
+#p5snake{
+    width: 30vw;
+    height: 40vh;
+}
+
+#bounce{
+    position: relative;
+    width: 40vw;
+    height: 40vh;
+    background-color:plum;
+    top:0;
+    left:500;
+ 
+    font-size: 50px;
+}
+
+button{
+    color: orangered;
+    background-color: yellow;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    border-style: double;
+    border-width: 10px;
+    border-color: blue;
+    cursor: pointer;
+    
+}
+
+/* bouncing text animation */
+
+.x {
+    animation: x 6s linear infinite alternate;
+}
+.y {
+    animation: y 3s linear infinite alternate;
+}
+
+
+@keyframes x {
+    100% {
+        transform: translateX(calc(30vw - 100px));
+   }
+}
+@keyframes y {
+    100% {
+        transform: translateY(calc(40vh - 100px));
+   }
+}
+/* starting placement for moving buttons */
+#scroll{
+    position: relative;
+    height: 80vh;
+    width:30vw;
+    background-color: red;
+    top: -20vh;
+  
+}
+/* Moving each letter inside it's container */
+#index{
+    z-index: 2;
+    position: absolute;
+    height: 20vh;
+    width: 40vw;
+    top: 0;
+    left: 70vw;
+    background-color: yellow;
+
+    font-size: 40px;
+  font-family: Geneva,sans-serif;
+}
+#inside{
+    padding-top: 10vh;
+  padding-left:2vw;
+letter-spacing: 1.5vw;
+}
+
+.jump{
+    color:blue;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 300ms ease-in-out;
+}
+
+.jump:hover{
+    color: red!important;
+    transform: translateY(-20px)
+}
+/* jump animations */
+@keyframes jump {
+    50%{
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-20px)
+    }
+    
+}
