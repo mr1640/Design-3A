@@ -158,13 +158,17 @@ button{
     top: 0;
     left: 70vw;
     background-color: yellow;
-
+border-top: 2rem;
+border-style: dotted;
+border-color: blue;
+border-bottom: 0rem;
+border-left: 0rem;
     font-size: 3vw;
   font-family: Geneva,sans-serif;
   display: inline;
 }
 #inside{
-    padding-top: 10vh;
+   padding-top: 2vh;
   padding-left:2vw;
 letter-spacing: 1.5vw;
 }
