@@ -12,6 +12,10 @@ body{
     overflow: hidden;
 }
 
+[invert]{
+    filter:invert(100%)
+}
+
 img{
     width: 10vw;
     position: absolute;
