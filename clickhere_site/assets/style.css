@@ -11,12 +11,12 @@ canvas {
 body{
     overflow: hidden;
 }
-/* invert attribute function for body */
+
 [invert]{
     filter:invert(100%)
 }
 
-img{
+img.lantern{
     width: 10vw;
     position: absolute;
 }
@@ -69,7 +69,7 @@ canvas#defaultCanvas0 {
     left:100;
   
 }
-
+/* text over snake widget */
 .play{
     position: absolute;
     z-index: 3;
@@ -197,4 +197,57 @@ letter-spacing: 1.5vw;
         transform: translateY(-40px)
     }
     
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* for about page stuff */
+
+#wall{
+    position: absolute;
+    width:100vw;
+}
+
+body.about{
+    background-color: blue;
+}
+
+.container{
+     /* position:absolute;
+    top: 25vh;
+    margin-left: 40vw;
+    border-color: blue;
+    border-width: 5px;
+    border-style: dashed;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+    margin-right: 40vw;
+    margin-bottom: 20vh; */
+    position:absolute;
+    top: 25vh;
+     margin:4vw, 4vh; 
+    margin-left: 40vw;
+    border-color: #edd118;
+    border-width: 5px;
+    border-style: dashed;
+    padding:2vw; 
+    width: 20vw;
+    height: 50vh;
+    /* scroll function */
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+    background-color: beige;
+    border-radius: 5rem;
+}
+button.home{
+    margin-top: 4vh;
+    margin-left: 2vw;
+}
+h1{
+    color: blue;
+    font-family: 'Silkscreen', cursive;
 }
