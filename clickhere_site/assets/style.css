@@ -11,7 +11,7 @@ canvas {
 body{
     overflow: hidden;
 }
-
+/* invert attribute function for body */
 [invert]{
     filter:invert(100%)
 }

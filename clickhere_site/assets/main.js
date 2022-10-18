@@ -38,7 +38,7 @@ lanterns.forEach(function(lantern){
   handleClickOnFly(lantern)
 })
 
-
+// invert button function
 const invertBtn = document.getElementById("invrtbttn")
 invertBtn.addEventListener("click", function(){
   document.body.toggleAttribute("invert")
