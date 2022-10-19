@@ -137,7 +137,7 @@ button{
 
 @keyframes x {
     100% {
-        transform: translateX(calc(30vw - 100px));
+        transform: translateX(calc(30vw - 5px));
    }
 }
 @keyframes y {
@@ -165,13 +165,27 @@ button{
     left: 70vw;
     background-color: yellow;
 border-top: 2rem;
+border-bottom: 2rem;
 border-style: dotted;
-border-color: blue;
-border-bottom: 0rem;
+animation: flash 2s linear infinite alternate;
+/* border-color: blue; */
+
 border-left: 0rem;
     font-size: 5vw;
     font-family: 'Bebas Neue', cursive;
   display: inline;
+}
+
+/* flashing border animation */
+@keyframes flash {
+    0%{
+        border-color: blue;
+    }
+    50%{
+        border-color: rgb(255, 234, 0);
+    }
+    100%{border-color: rgb(0, 0, 255);}
+    
 }
 #inside{
    padding-top: 2vh;
@@ -183,7 +197,7 @@ letter-spacing: 1.5vw;
     color:blue;
     cursor: pointer;
     display: inline-block;
-    transition: all 300ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .jump:hover{
@@ -208,6 +222,8 @@ a{
 
 /* for about page stuff */
 
+/* background image */
+
 #wall{
     position: absolute;
     width:100vw;
@@ -215,8 +231,9 @@ a{
 
 body.about{
     background-color: blue;
+   
 }
-
+/* window */
 .container{
      /* position:absolute;
     top: 25vh;
@@ -245,10 +262,12 @@ body.about{
     background-color: beige;
     border-radius: 5rem;
 }
+/* home button */
 button.home{
     margin-top: 4vh;
     margin-left: 2vw;
 }
+/* title */
 h1{
     color: blue;
     font-family: 'Silkscreen', cursive;
