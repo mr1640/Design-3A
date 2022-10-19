@@ -16,7 +16,7 @@ body{
     filter:invert(100%)
 }
 
-img{
+img.lantern{
     width: 10vw;
     position: absolute;
 }
@@ -69,7 +69,7 @@ canvas#defaultCanvas0 {
     left:100;
   
 }
-
+/* text over snake widget */
 .play{
     position: absolute;
     z-index: 3;
@@ -101,7 +101,7 @@ canvas#defaultCanvas0 {
     position: relative;
     width: 40vw;
     height: 40vh;
-    background-color:plum;
+    background-color:blue;
     top:0;
     left:500;
  
@@ -116,11 +116,12 @@ button{
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
-    font-size: 30px;
+    font-size: 50px;
     border-style: double;
     border-width: 10px;
     border-color: blue;
     cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
     
 }
 
@@ -151,6 +152,7 @@ button{
     width:30vw;
     background-color: red;
     top: -20vh;
+   
   
 }
 /* Moving each letter inside it's container */
@@ -167,13 +169,13 @@ border-style: dotted;
 border-color: blue;
 border-bottom: 0rem;
 border-left: 0rem;
-    font-size: 3vw;
-  font-family: Geneva,sans-serif;
+    font-size: 5vw;
+    font-family: 'Bebas Neue', cursive;
   display: inline;
 }
 #inside{
    padding-top: 2vh;
-  padding-left:2vw;
+  padding-left:3vw;
 letter-spacing: 1.5vw;
 }
 
@@ -197,4 +199,60 @@ letter-spacing: 1.5vw;
         transform: translateY(-40px)
     }
     
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* for about page stuff */
+
+#wall{
+    position: absolute;
+    width:100vw;
+}
+
+body.about{
+    background-color: blue;
+}
+
+.container{
+     /* position:absolute;
+    top: 25vh;
+    margin-left: 40vw;
+    border-color: blue;
+    border-width: 5px;
+    border-style: dashed;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+    margin-right: 40vw;
+    margin-bottom: 20vh; */
+    position:absolute;
+    top: 25vh;
+    margin:4vw, 4vh; 
+    margin-left: 40vw;
+    border-color: #edd118;
+    border-width: 5px;
+    border-style: dashed;
+    padding:2vw; 
+    width: 20vw;
+    height: 50vh;
+    /* scroll function */
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+    background-color: beige;
+    border-radius: 5rem;
+}
+button.home{
+    margin-top: 4vh;
+    margin-left: 2vw;
+}
+h1{
+    color: blue;
+    font-family: 'Silkscreen', cursive;
+}
+#here{
+    color: red;
 }

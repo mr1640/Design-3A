@@ -1,5 +1,5 @@
 //select all the instances of the lantern class in the html document 
-const lanterns = document.querySelectorAll(".lantern")
+const lanterns = document.querySelectorAll(".lantern1")
 
 //var onClick = (event) => {
   //var lanternFly = document.getElementById(event.target.id);
@@ -38,7 +38,7 @@ lanterns.forEach(function(lantern){
   handleClickOnFly(lantern)
 })
 
-
+// invert button function
 const invertBtn = document.getElementById("invrtbttn")
 invertBtn.addEventListener("click", function(){
   document.body.toggleAttribute("invert")
