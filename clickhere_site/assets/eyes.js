@@ -27,7 +27,7 @@ function setup() {
     fill(255);
     circle(height/2,height/2,windowHeight/2.5);
     //iris
-     let xc2 =constrain(mouseX-100, windowHeight/2.3, windowHeight/1.8);
+     let xc2 =constrain(mouseX-700, windowHeight/2.3, windowHeight/1.8);
     let xs2 = constrain(mouseY, windowHeight/2.5,windowHeight/2);
      fill(0);
     circle(xc2,xs2,windowHeight/5);
@@ -43,11 +43,13 @@ function setup() {
     fill(255);
     circle(height/2,height/2,windowHeight/2.5);
     //iris
+    let xc3 =constrain(mouseX-900, windowHeight/2.3, windowHeight/1.8);
+    let xs3 = constrain(mouseY, windowHeight/2.5,windowHeight/2);
     fill(0);
-    circle(xc,xs,windowHeight/5);
+    circle(xc3,xs3,windowHeight/5);
     //glare
     fill(255);
-    circle(xc+20,xs-20,windowHeight/25);
+    circle(xc3+20,xs3-20,windowHeight/25);
     
         translate(windowWidth/4.5,0);
     
