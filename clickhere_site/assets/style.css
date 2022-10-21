@@ -201,7 +201,7 @@ letter-spacing: 1.5vw;
 }
 
 .jump:hover{
-    color: red!important;
+    /* color: red!important; */
     transform: translateY(-20px)
 }
 /* jump animations */
