@@ -47,8 +47,8 @@ img.lantern{
 
 /* adjusting for embedded p5 */
 canvas#defaultCanvas0 {
-    margin-top: -100vh;
-    margin-left: -20vw;
+    margin-top: -90vh;
+    margin-left: -2.5vw;
     width: 70vw;
     height: 70vh;
 }
