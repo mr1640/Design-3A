@@ -11,6 +11,9 @@
 body{
     background-color: black;
     font-family: 'Bebas Neue', cursive;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .header{
@@ -21,22 +24,25 @@ body{
 #eye_svg{
     width: 15vw;
     cursor: pointer;
+    filter: invert();
+    position: absolute;
     
 }
-button{
+/* button{
     width: 10vw;
     cursor: pointer;
     background-color: transparent;
     border: 10;
     border-color: red;
  
-}
+} */
 #text{
     font-size: 10vw;
     width: 4vw;
     line-height: 80%;
     padding-top: 1.5vh;
     animation: blink 2s ease-in-out infinite alternate;
+    padding-left: 15vw;
 }
 @keyframes blink {
     0%{
@@ -50,8 +56,49 @@ button{
 
 .logo{
     width: 20vw;  
+   filter: invert(100%);
 }
 .logo:hover{
-    filter: invert();
+    filter: invert(0%);
     
+}
+
+#astro{
+    position: absolute;
+    top:50vh;
+    left: 10vw;
+}
+#car{
+    position: absolute;
+    left: 60vw;
+    top: 15vh;
+}
+
+#foot{
+    position: absolute;
+    left: 40vw;
+    top: 37vh;
+}
+
+#make{
+    position: absolute;
+    left: 10vw;
+    top: 80vh;
+}
+
+#rock{
+    position: absolute;
+    left: 80vw;
+    top: 60vh;
+}
+
+#sim{
+    position: absolute;
+    left: 40vw;
+    top: 70vh;
+}
+#time{
+    position: absolute;
+    left: 37vw;
+    top: 15vh;
 }
