@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 300ms ease-in-out;
+}
+
+[invert]{
+    filter:invert(100%)
+}
+body{
+    background-color: black;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.header{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+#eye_svg{
+    width: 15vw;
+    cursor: pointer;
+    
+}
+button{
+    width: 10vw;
+    cursor: pointer;
+    background-color: transparent;
+    border: 10;
+    border-color: red;
+ 
+}
+#text{
+    font-size: 10vw;
+    width: 4vw;
+    line-height: 80%;
+    padding-top: 1.5vh;
+    animation: blink 2s ease-in-out infinite alternate;
+}
+@keyframes blink {
+    0%{
+        color: white;
+
+    }
+    100%{
+        color: black;
+    }
+}
+
+.logo{
+    width: 20vw;  
+}
+.logo:hover{
+    filter: invert();
+    
+}
