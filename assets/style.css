@@ -16,10 +16,9 @@ body{
 .art{
     color:antiquewhite;
     font-style: oblique;
-        -webkit-animation: fadeinout 7s linear forwards;
-        animation: fadeinout 8s linear forwards;
-        opacity: 0;
-        animation-iteration-count: infinite;
+    }
+    a{
+      font-size: 50px;
     }
     
   /*  @-webkit-keyframes fadeinout {
