@@ -14,7 +14,6 @@ svgastro.addEventListener("load",function(){
   let svgDoc = svgastro.contentDocument;
   let astro = svgDoc.getElementById("astro")
   astro.addEventListener("click", function(){
-
     if (confirm("wormholes?")){
       // true
       alert("wormholes are magical portals that are used for timetravel");
@@ -22,9 +21,7 @@ svgastro.addEventListener("load",function(){
       // false
       alert("lame!");
      // document.body.style.backgroundColor = "red";
-
     }
-
   })
 })
 
