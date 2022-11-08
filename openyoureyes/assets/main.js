@@ -16,10 +16,10 @@ svgastro.addEventListener("load",function(){
   astro.addEventListener("click", function(){
     if (confirm("wormholes?")){
       // true
-      alert("wormholes are magical portals that are used for timetravel");
+      alert("wormholes are magical portals that are used for timetravel. We have been using them for years.");
     } else {
       // false
-      alert("lame!");
+      alert("suit urself");
      // document.body.style.backgroundColor = "red";
     }
   })
@@ -31,7 +31,7 @@ svgcar.addEventListener("load",function(){
   let svgDoc = svgcar.contentDocument;
   let car = svgDoc.getElementById("car")
   car.addEventListener("click", function(){
-    alert("cars have been able to run on water since the 1960s");
+    alert("cars have been able to run on water since the 20th century");
   })
 })
 
@@ -41,7 +41,7 @@ svgfoot.addEventListener("load",function(){
   let svgDoc = svgfoot.contentDocument;
   let foot = svgDoc.getElementById("foot")
   foot.addEventListener("click", function(){
-    alert("bigfoot is just naturally blurry");
+    alert("bigfoot is just naturally blurry.");
   })
 })
 
@@ -71,7 +71,14 @@ svgsim.addEventListener("load",function(){
   let svgDoc = svgsim.contentDocument;
   let sim = svgDoc.getElementById("sim")
   sim.addEventListener("click", function(){
-    alert("we all live in a sims game");
+    if (confirm("simulation?")){
+      // true
+      alert("Simulation theory posits the universe as we know it is an advanced digital construct overseen by some higher form of intelligence. We all live in a game of sims. This concept has been debated since the Enlightenment, but there is no definitive answer.");
+    } else {
+      // false
+      alert("Ah, docka morpher");
+     // document.body.style.backgroundColor = "red";
+    }
   })
 })
 
@@ -81,7 +88,14 @@ svgtime.addEventListener("load",function(){
   let svgDoc = svgtime.contentDocument;
   let time = svgDoc.getElementById("time")
   time.addEventListener("click", function(){
-    alert("last-thursdayism");
+    if (confirm("do you remember last thursday")){
+      // true
+      alert("Last Thursdayism (alternately Last Tuesdayism or Last Wednesdayism) is the idea that the universe was created last Thursday, but with the physical appearance of being billions of years old. It's also a counter to the creationism theory");
+    } else {
+      // false
+      alert("sus");
+     // document.body.style.backgroundColor = "red";
+    }
   })
 })
 
