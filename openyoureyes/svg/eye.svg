@@ -5,7 +5,7 @@ opacity:0;
 }
 @media screen 
   and (min-device-width: 320px) 
-  and (max-device-width: 580px)
+  and (max-device-width: 680px)
   and (-webkit-min-device-pixel-ratio: 2) {
   #Layer_7{
     opacity:0;
