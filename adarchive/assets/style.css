@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 300ms ease-in-out;
+}
+
+img{
+    /* height:35vh;
+    position: relative; */
+    display: inline-block;
+    vertical-align: middle;
+    height: 80vh;
+    opacity: 70%;
+}
+
+img:hover{
+    opacity: 100;
+}
+body{
+    font-family: 'Press Start 2P', cursive;
+    width: auto;
+    height:210px;
+    overflow-x:scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    animation: color 20s infinite;  
+}
+@keyframes color {
+    0%{background-color: red;}
+    10%{background-color: orangered ;}
+    20%{background-color: orange;}
+    30%{background-color: yellow;}
+    40%{background-color: yellowgreen;}
+    50%{background-color: green;}
+    60%{background-color: teal;}
+    70%{background-color: blue;}
+    80%{background-color:blueviolet ;}
+    90%{background-color: violet;}
+    100%{background-color: red;}
+}
+#title{
+    position:fixed;
+    color: whitesmoke;
+    margin-top: -15vh;
+    font-size: 8VH;
+    margin-left: 1.2VW;
+}
+.container{
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    margin-top:20vh;
+ 
+}
