@@ -28,17 +28,17 @@ body{
     animation: color 20s infinite;  
 }
 @keyframes color {
-    0%{background-color: red;}
-    10%{background-color: orangered ;}
-    20%{background-color: orange;}
-    30%{background-color: yellow;}
-    40%{background-color: yellowgreen;}
-    50%{background-color: green;}
-    60%{background-color: teal;}
-    70%{background-color: blue;}
-    80%{background-color:blueviolet ;}
-    90%{background-color: violet;}
-    100%{background-color: red;}
+    0%{background-color: #001118;}
+    10%{background-color: #015f73 ;}
+    20%{background-color: #089396;}
+    30%{background-color: #93d2bd;}
+    40%{background-color: #e8d7a6;}
+    50%{background-color: #ed9b00;}
+    60%{background-color: #ca6701;}
+    70%{background-color: #bb3d03;}
+    80%{background-color:#ad2111 ;}
+    90%{background-color: #992125;}
+    100%{background-color: #001118;}
 }
 #title{
     position:fixed;
