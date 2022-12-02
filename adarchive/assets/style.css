@@ -18,7 +18,8 @@ img:hover{
     opacity: 100;
 }
 body{
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Fredoka One', cursive;
+
     width: auto;
     height:210px;
     overflow-x:scroll;
@@ -41,10 +42,15 @@ body{
 }
 #title{
     position:fixed;
+text-align: center;
     color: whitesmoke;
     margin-top: -15vh;
-    font-size: 8VH;
-    margin-left: 1.2VW;
+    font-size: 7vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2vw;
+
+
 }
 .container{
     /* display: flex;

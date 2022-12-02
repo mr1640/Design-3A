@@ -25,3 +25,9 @@
 //             }
 //         }
    
+
+
+console.log("Here")
+document.body.addEventListener("scroll", (e)=>{
+    console.log(document.body.scrollLeft, "here")
+})
