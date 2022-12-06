@@ -38,12 +38,12 @@ body{
 
 /* eye icon placement */
 
-object{
+/* object{
     transform:scale(0.2);
 }
 object:hover{
     transform:scale(2);
-}
+} */
 #eye_svg{
     width: 15vw;
     cursor: pointer;
@@ -84,9 +84,11 @@ object:hover{
 .logo{
     width: 20vw;  
    filter: invert(100%);
+   transform:scale(0.2);
 }
 .logo:hover, .logo:focus{
     filter: invert(0%);
+    transform:scale(2);
     
 }
 
