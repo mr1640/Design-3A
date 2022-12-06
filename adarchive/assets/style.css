@@ -27,7 +27,7 @@ body{
     white-space: nowrap;
     animation: color 20s infinite;  
 }
-@keyframes color {
+/* @keyframes color {
     0%{background-color: #001118;}
     10%{background-color: #015f73 ;}
     20%{background-color: #089396;}
@@ -39,12 +39,12 @@ body{
     80%{background-color:#ad2111 ;}
     90%{background-color: #992125;}
     100%{background-color: #001118;}
-}
+} */
 #title{
     position:fixed;
 text-align: center;
     color: whitesmoke;
-    margin-top: -15vh;
+    margin-top: -20vh;
     font-size: 7vw;
     display: flex;
     flex-wrap: wrap;
