@@ -19,7 +19,6 @@ img:hover{
 }
 body{
     font-family: 'Fredoka One', cursive;
-    text-shadow: 20px 20px #ff0000;
 
 
     width: auto;
@@ -44,21 +43,55 @@ body{
 } */
 #title{
     position:fixed;
-text-align: center;
-    color: whitesmoke;
-    margin-top: -10%;
+    top: 1%;
+    color: beige;
     left: 45vw;
     font-size: 7vw;
     display: flex;
     flex-wrap: wrap;
-    
+    text-shadow: 10px 10px #ff0000;
 
 
 }
+
+#sub{
+    position: fixed;
+    
+    top: 1%;
+    left:94%;
+}
+a{
+    color: beige;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
 .container{
     /* display: flex;
     flex-direction: row;
     flex-wrap: wrap; */
     margin-top:20vh;
  
+}
+
+.pop{
+
+}
+.invert{
+
+
+}
+.flip{
+
+}
+.rotate{
+    
 }

@@ -43,7 +43,10 @@ var body = document.getElementsByTagName('body')[0];
    
 
 
-console.log("Here")
-document.body.addEventListener("scroll", (e)=>{
-    console.log(document.body.scrollLeft, "here")
-})
+function transformscroll(event){
+    if(!event.deltaY) return;
+    event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
+}
+
+let scrollDiv = document.scrollingElement || document.documentElement;
+scrollDiv.addEventListener( "wheel", transformscroll);
