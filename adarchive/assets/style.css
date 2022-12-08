@@ -47,8 +47,8 @@ body{
 #title{
     position:fixed;
     top: 1%;
-    color: beige;
-    left: 40rem;
+    color: #f5f5dc;
+    left: 48vw;
     font-size: 7vw;
     display: flex;
     flex-wrap: wrap;
@@ -62,7 +62,7 @@ body{
     position: fixed;
     font-family: 'Fredoka One', cursive;
     top: 1%;
-    left:76rem;
+    left:88vw;
     z-index: 2;
     font-size: 2vw;
     
