@@ -12,8 +12,9 @@ img{
     flex-direction: row;
     display: inline-block;
     vertical-align: middle;
-    height: 100vh;
-    opacity: 70%;
+    height: 70vh;
+    opacity: 50%;
+    margin-top:20vh;
     /* position: absolute; */
 }
 
@@ -48,11 +49,11 @@ body{
     position:fixed;
     top: 1%;
     color: #f5f5dc;
-    left: 48vw;
+    left: 38vw;
     font-size: 7vw;
     display: flex;
     flex-wrap: wrap;
-    text-shadow: 10px 10px #ad2111;
+    text-shadow: 5px 5px #ad2111;
     z-index: 1;
 
 
@@ -67,6 +68,22 @@ body{
     font-size: 2vw;
     
 }
+
+.button {
+    height: 70px;
+    width: 70px;
+    background-color: red;
+    position: fixed;
+    z-index: 2;
+    left: 5vw;
+    top: 87vh;
+    border-radius: 50%;
+  }
+
+  .button:hover{
+    cursor: pointer;
+  }
+
 a{
     color: beige;
 }
@@ -92,7 +109,7 @@ a:hover{
  
 }
 
-.pop:hover{
+/* .pop:hover{
     filter:saturate(600%);
     opacity: 1
 ;
@@ -115,4 +132,3 @@ position: relative;
     75%  {transform: scale(1.1);}
   }
   /* about page */
-  
