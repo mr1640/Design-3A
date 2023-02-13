@@ -1,7 +1,4 @@
-const invertBtn = document.getElementById("invrtbttn")
-invertBtn.addEventListener("click", function(){
-  document.body.toggleAttribute("invert")
-})
+
 
 
 var body = document.getElementsByTagName('body')[0];
