@@ -1,6 +1,9 @@
 
 
 
+
+
+
 var body = document.getElementsByTagName('body')[0];
         body.style.backgroundColor = 'green';
 
@@ -53,3 +56,25 @@ function transformscroll(event){
 
 let scrollDiv = document.scrollingElement || document.documentElement;
 scrollDiv.addEventListener( "wheel", transformscroll);
+
+
+const bttn = document.getElementById('button');
+const girls = document.querySelectorAll(".she");
+bttn.addEventListener("click",invrt);
+
+function invrt(){
+    
+    for (let i = 0; i < girls.length; i++) {
+        girls[i].style.backgroundColor = "blue";
+        }
+        //girls.style.backgroundColor = "blue";
+      
+}
+// console.log(girls)
+
+// function pictureChange(){
+//     var girls = document.querySelectorAll('.she');
+//     girls.style.opacity = "0";
+// }
+// let bttn = document.getElementById("button");
+// bttn.addEventListener("click")
