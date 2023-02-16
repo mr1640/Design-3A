@@ -65,7 +65,7 @@ bttn.addEventListener("click",invrt);
 function invrt(){
     
     for (let i = 0; i < girls.length; i++) {
-        girls[i].style.backgroundColor = "blue";
+        girls[i].style.filter = "grayscale(100%)";
         }
         //girls.style.backgroundColor = "blue";
       
