@@ -65,12 +65,16 @@ bttn.addEventListener("click",invrt);
 function invrt(){
     
     for (let i = 0; i < girls.length; i++) {
-        girls[i].style.filter = "grayscale(100%)";
-        }
+        // girls[i].style.filter = "saturate(1000%)";
+        // }
         //girls.style.backgroundColor = "blue";
-      
-}
-// console.log(girls)
+        if(girls[i].style.filter = "saturate(1)"){
+            girls[i].style.filter = "saturate(1000%)";}
+      else{ 
+        window.location.reload();
+        return false;}
+}}
+ console.log('invrt')
 
 // function pictureChange(){
 //     var girls = document.querySelectorAll('.she');
