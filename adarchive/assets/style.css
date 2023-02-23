@@ -23,8 +23,15 @@ span{
 }
 
 img:hover{
-    opacity: 100;
+    opacity: 100%;
 }
+
+/* jquery test */
+.red{
+    opacity: .1;
+}
+
+/* scoll, font. etc */
 body{
    
 
@@ -49,6 +56,7 @@ body{
     90%{background-color: #992125;}
     100%{background-color: #001118;}
 } */
+/* title */
 #title{
     position:fixed;
     top: 1%;
@@ -62,7 +70,7 @@ body{
 
 
 }
-
+/* about */
 #sub{
     position: fixed;
     font-family: 'Fredoka One', cursive;
@@ -72,7 +80,7 @@ body{
     font-size: 2vw;
     
 }
-
+/* button  */
 #button {
     height: 70px;
     width: 70px;
@@ -100,6 +108,15 @@ body{
       transform: rotate(360deg);
     }
   }
+
+/* directions */
+
+#direct{
+    position: fixed;
+    left: 12vw;
+    top: 92vh;
+    color: #f5f5dc;
+}
   
   #button:hover{
     cursor: pointer;

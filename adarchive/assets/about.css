@@ -1,8 +1,10 @@
+
+/* 
 #wall{
     position: absolute;
     width:100vw;
-}
-
+} */
+/* background color change */
 body.about{
     animation: color 20s infinite;  
 }
@@ -32,9 +34,9 @@ body.about{
     margin-right: 40vw;
     margin-bottom: 20vh; */
     position:absolute;
-    top: 19vh;
-    margin:4vw, 4vh; 
-    margin-left: 34vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     /* border-color: #ed9b00;
     border-width: 25px;
     border-style:groove; */

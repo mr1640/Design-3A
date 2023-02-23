@@ -2,7 +2,7 @@
 
 
 
-
+//backgound color
 
 var body = document.getElementsByTagName('body')[0];
         body.style.backgroundColor = 'green';
@@ -48,7 +48,7 @@ var body = document.getElementsByTagName('body')[0];
         }
    
 
-
+//sideways scroll
 function transformscroll(event){
     if(!event.deltaY) return;
     event.currentTarget.scrollLeft += event.deltaY + event.deltaX;
@@ -57,25 +57,51 @@ function transformscroll(event){
 let scrollDiv = document.scrollingElement || document.documentElement;
 scrollDiv.addEventListener( "wheel", transformscroll);
 
-
+//button function
 const bttn = document.getElementById('button');
 const girls = document.querySelectorAll(".she");
+const all = document.getElementsByTagName('img')
 bttn.addEventListener("click",invrt);
 
-function invrt(){
-    
-    for (let i = 0; i < girls.length; i++) {
-        // girls[i].style.filter = "saturate(1000%)";
-        // }
-        //girls.style.backgroundColor = "blue";
-        if(girls[i].style.filter = "saturate(1)"){
-            girls[i].style.filter = "saturate(1000%)";}
-      else{ 
-        window.location.reload();
-        return false;}
-}}
- console.log('invrt')
+var toggled = false;
 
+function invrt(){
+    //if(toggled === false) {
+    //  write saturation up code here
+        //toggled = true;
+    //} else {
+        //write reverting code here
+        //toggled = false;
+    //}
+    // document.body.style.opacity = '100%';
+    // for (let i = 0; i < all.length; i++) {
+    //     all[i].style.opacity = "10%";
+    //   }
+    // for (let i = 0; i < all.length; i++){
+    //     all[i].style.opacity = '100%'
+    // }
+
+    for (let i = 0; i < girls.length; i++) {
+        girls[i].style.filter = "saturate(1000%)";
+      }
+    for (let i = 0; i < girls.length; i++){
+        // girls[i].children('img').style.opacity = '100%';
+        girls[i].style.opacity = "100%";
+    }
+}
+ console.log(all)
+
+//  $('#button').toggleClass('red');
+
+//  $(document).ready(function(){
+//     $("#button").click(function(){
+//     //   $("img").toggleClass("red");
+//         $(this).toggleClass("red");
+//     invrt();
+    
+
+//     });
+//   });
 // function pictureChange(){
 //     var girls = document.querySelectorAll('.she');
 //     girls.style.opacity = "0";
