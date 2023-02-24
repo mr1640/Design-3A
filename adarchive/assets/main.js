@@ -60,51 +60,50 @@ scrollDiv.addEventListener( "wheel", transformscroll);
 //button function
 const bttn = document.getElementById('button');
 const girls = document.querySelectorAll(".she");
-const all = document.getElementsByTagName('img')
-bttn.addEventListener("click",invrt);
+bttn.addEventListener("click", invrt);
 
-var toggled = false;
+invertSwitch = true;
 
-function invrt(){
-    //if(toggled === false) {
-    //  write saturation up code here
-        //toggled = true;
-    //} else {
-        //write reverting code here
-        //toggled = false;
-    //}
-    // document.body.style.opacity = '100%';
-    // for (let i = 0; i < all.length; i++) {
-    //     all[i].style.opacity = "10%";
-    //   }
-    // for (let i = 0; i < all.length; i++){
-    //     all[i].style.opacity = '100%'
-    // }
+function invrt() {
 
-    for (let i = 0; i < girls.length; i++) {
-        girls[i].style.filter = "saturate(1000%)";
-      }
-    for (let i = 0; i < girls.length; i++){
-        // girls[i].children('img').style.opacity = '100%';
-        girls[i].style.opacity = "100%";
+    if (invertSwitch) {
+        for (let i = 0; i < girls.length; i++) {
+            girls[i].style.filter = "saturate(1000%)";
+        }
+        invertSwitch = false;
+    } else {
+        for (let i = 0; i < girls.length; i++) {
+            girls[i].style.filter = "saturate(1)"
+        }
+        invertSwitch = true;
     }
+    console.log(invertSwitch)
 }
- console.log(all)
 
-//  $('#button').toggleClass('red');
 
-//  $(document).ready(function(){
-//     $("#button").click(function(){
-//     //   $("img").toggleClass("red");
-//         $(this).toggleClass("red");
-//     invrt();
-    
 
-//     });
-//   });
-// function pictureChange(){
-//     var girls = document.querySelectorAll('.she');
-//     girls.style.opacity = "0";
+
+
+
+
+
+// const bttn = document.getElementById('button');
+// const girls = document.querySelectorAll(".she");
+// const all = document.getElementsByTagName('img')
+// bttn.addEventListener("click",invrt);
+
+// var toggled = false;
+
+// function invrt(){
+
+
+//     for (let i = 0; i < girls.length; i++) {
+//         girls[i].style.filter = "saturate(1000%)";
+//       }
+//     for (let i = 0; i < girls.length; i++){
+//         // girls[i].children('img').style.opacity = '100%';
+//         girls[i].style.opacity = "100%";
+//     }
 // }
-// let bttn = document.getElementById("button");
-// bttn.addEventListener("click")
+//  console.log(all)
+

@@ -13,7 +13,7 @@ img{
     display: inline-block;
     vertical-align: middle;
     height: 70vh;
-    opacity: 50%;
+    /* opacity: 50%; */
     margin-top: 20vh;
     
     /* position: absolute; */
@@ -22,9 +22,9 @@ span{
     filter: saturate(1);
 }
 
-img:hover{
+/* img:hover{
     opacity: 100%;
-}
+} */
 
 /* jquery test */
 .red{
@@ -111,13 +111,13 @@ body{
 
 /* directions */
 
-#direct{
+/* #direct{
     position: fixed;
     left: 12vw;
     top: 92vh;
     color: #f5f5dc;
 }
-  
+   */
   #button:hover{
     cursor: pointer;
   }
