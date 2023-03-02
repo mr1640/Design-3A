@@ -60,25 +60,62 @@ scrollDiv.addEventListener( "wheel", transformscroll);
 //button function
 const bttn = document.getElementById('button');
 const girls = document.querySelectorAll(".she");
+const others= document.querySelectorAll(".other");
 bttn.addEventListener("click", invrt);
 
-invertSwitch = true;
+invertSwitch = true
 
-function invrt() {
-
-    if (invertSwitch) {
+function invrt(){
+if (invertSwitch) {
+    //change all girl images  
         for (let i = 0; i < girls.length; i++) {
             girls[i].style.filter = "saturate(1000%)";
         }
+   ////change all other images  
+        for (let i = 0; i < others.length; i++) {
+            others[i].style.filter = "grayscale(1000%)";
+        }
+   
         invertSwitch = false;
-    } else {
+    } 
+
+  else {
         for (let i = 0; i < girls.length; i++) {
             girls[i].style.filter = "saturate(1)"
         }
+    ////change all other images  
+        for (let i = 0; i < others.length; i++) {
+            others[i].style.filter = "saturate(1)";
+        }
+
         invertSwitch = true;
     }
     console.log(invertSwitch)
+
 }
+
+
+
+
+
+
+// invertSwitch = true;
+
+// function invrt() {
+
+//     if (invertSwitch) {
+//         for (let i = 0; i < girls.length; i++) {
+//             girls[i].style.filter = "saturate(1000%)";
+//         }
+//         invertSwitch = false;
+//     } else {
+//         for (let i = 0; i < girls.length; i++) {
+//             girls[i].style.filter = "saturate(1)"
+//         }
+//         invertSwitch = true;
+//     }
+//     console.log(invertSwitch)
+// }
 
 
 
