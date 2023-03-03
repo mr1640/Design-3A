@@ -1,10 +1,21 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 300ms ease-in-out;
+}
 /* 
 #wall{
     position: absolute;
     width:100vw;
 } */
+
+
+
 /* background color change */
+
+
+
 body.about{
     animation: color 20s infinite;  
 }
@@ -55,27 +66,37 @@ body.about{
     cursor: wait;
 }
 /* home button */
-button.home{
-    color: #bb3d03;
-    background-color: beige;
-    border-radius: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    font-size: 30px;
-    border-style: double;
-    border-width: 10px;
-    border-color: #015f73;
+div.home{
+    color: beige;
+    position: fixed;
+    font-family: 'Fredoka One', cursive;
+    top: 3%;
+    left:3vw;
+    z-index: 2;
+    font-size: 2vw;
     cursor: pointer;
     font-family: 'Fredoka One', cursive;
 }
+div.home:hover{
+    text-decoration:underline;
+    color: black;
+}
 /* title */
 h1{
-    color: #015f73;
+
+  
+    top: 1%;
+    color: #f5f5dc;
+    left: 8vw;
+    font-size: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    text-shadow: 5px 5px #ad2111;
+    z-index: 1;
+
     font-family: 'Fredoka One', cursive;
     font-size: 3vw;
-    background-color: beige;
+    
     border-radius: 1rem;
     text-align: left;
     padding: 1rem;
@@ -90,9 +111,9 @@ body2{
     color: beige;
     text-align: center!important;
 }
-#here{
+/* #here{
     color: #bb3d03;
-}
+} */
 #name{
     font-size: 1rem;
 }
