@@ -4,15 +4,15 @@ function setup() {
 
 function draw() {
   background(0);
-  
+
   let x = 0;
   let y = 0;
-  
+
   while (x < width && y < height) {
     // statements
      let mover = x*100;
     let movery = y*100;
-     
+
 
   eyeball(mouseX,mouseY,0,mover,255);
   eyeball(mouseX/2,mouseY,windowWidth/4,mover,255);
@@ -24,23 +24,12 @@ function draw() {
     y += 100;
   }
   
-// for(let x = 0;x<width;x+=100
-//    y = 0;x<width;x+=100) 
-//     {
-//  let mover = x*100 
-
-//   eyeball(mouseX,mouseY,0,mover,255);
-//   eyeball(mouseX/2,mouseY,windowWidth/4,mover,255);
-//   eyeball(mouseX/3,mouseY,windowWidth/2,mover,255);
-//   eyeball(mouseX/3,mouseY,windowWidth/2,mover,255);
-// }
- 
 
 }
 
 function eyeball(mx,my,tx,ty,col){
   push()
-  translate(tx,ty)  
+  translate(tx,ty)
   //whites ofeye
   noStroke();
   fill(col);
