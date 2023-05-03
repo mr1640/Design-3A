@@ -1,0 +1,40 @@
+body{
+    font-size:40px;
+    text-align: center;
+    line-height:100vh;
+}
+
+.containermem{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    cursor:default;
+}
+
+
+p{
+    margin:0px;
+}
+
+span{
+    display:none;
+}
+.container > span{
+    display: inline-block;
+}
+span:hover > span{
+    display: inline-block;
+}
+span:first-child:hover{top: -10px;}
+span:nth-child(2):hover{top: -20px;}
+span:nth-child(3):hover{top: -14px;}
+span:nth-child(4):hover{top: -24px;}
+span:nth-child(5):hover{top: -18px;}
+span:nth-child(6):hover{top: -32px;}
+span:nth-child(7):hover{top: -45px;}
+span:nth-child(8):hover{top: -23px;}
+span:nth-child(9):hover{top: -26px;}
+span:nth-child(10):hover{top: -10px;}
+span:nth-child(11):hover{top: -16px;}

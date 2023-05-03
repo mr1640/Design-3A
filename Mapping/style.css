@@ -10,6 +10,15 @@ a{
     text-decoration: none;
     color: inherit;
 }
+/* jail */
+body.one{
+background-color: rgb(39, 3, 3);
+color: antiquewhite;
+}
+h1.one{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5vh;
+}
 /* home page */
 h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -134,10 +143,21 @@ div.scrtbrow{
 /* emoji */
 body.emoji{
     background-color:salmon;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 div.scrtemoji{
     padding-top: 5vh;
     padding-left: 5vw;
+}
+span.emo{
+    font-size: 7vw;
+    transition: opacity .5s ease-in-out;
+    opacity: 0;
+}
+span.emo:hover{
+    opacity:100;
 }
 /* cyberspace */
 body.cyber{
@@ -368,6 +388,13 @@ body.meme{
 div.scrtmeme{
     padding-top: 5vh;
     padding-left: 5vw;
+}
+
+.containermem{
+    position:fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
 }
 /* cancel */
 body.cncl{

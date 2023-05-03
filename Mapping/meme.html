@@ -7,14 +7,49 @@
     <link rel="stylesheet" href="style.css">
     <title>my face when</title>
 </head>
-<body class="meme">
-    <h1>
+<body id="meme">
+    <!-- <h1>
         me<a href="index.html">me</a>
     </h1>
     <div class="scrtmeme">
        <a href="">link 1</a>
        <a href="">link 2</a>
        <a href="">link 3</a>
-    </div>
+    </div> -->
+    <div class="containermem">
+<span id="mem">hell</span><a href="lol.html">o</a><a href="spam.html">o</a><a href="emoji.html">o</a><a href="lol.html">o</a><a href="spam.html">o</a><a href="emoji.html">o</a><a href="lol.html">o</a><a href="spam.html">o</a><a href="emoji.html">o</a><a href="lol.html">o</a><a href="spam.html">o</a><a href="emoji.html">o</a>
+
+</div>
+
+</body>
+
+    <script type="text/javascript">
+        var color = [, "#3C9EE7", "#E7993C", 
+        "#E73C99", "#3CE746", "#E7993C"];
+  
+    document.querySelector("body").addEventListener(
+            "mousemove", function () {
+                  
+        document.querySelector("body").style.background 
+            = color[(Math.floor(Math.random() * color.length))];
+    })
+
+var arrayOfImages = [];
+
+    // Push the URLs to three images to arrayOfImages
+arrayOfImages.push('mem2.png');
+arrayOfImages.push('mem3.png');
+arrayOfImages.push('mem4.png');
+
+// Output arrayOfImages to the console
+console.log(arrayOfImages);
+
+    document.querySelector("span").addEventListener(
+            "mousemove", function () {
+                  
+        document.querySelector("span").style.backgroundImage 
+            = arrayOfImages[(Math.floor(Math.random() * arrayOfImages.length))];
+    })
+    </script>
 </body>
 </html>
